@@ -1,0 +1,27 @@
+*{
+    box-sizing:border-box;
+}
+p.a {
+    font-family: "Times New Roman", Times, serif;
+  }
+header{
+    border: 1px solid black;
+    height: 50px;
+}
+main{
+    border: 1px solid black;
+    width: 250px;
+}
+aside{
+    border:1px solid black;
+}
+.principal{
+    display:flex;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer{
+    border: 1px solid black;
+    height: 50px;
+}
