@@ -28,12 +28,18 @@ ul{
 }
 header{
     border: 1px solid white;
-    padding: 1rem;
     position: fixed;
     height: 5rem;
-    width: 98.93%;
+    right:0;
     top: 0;
+    width: calc(100% - 16px);
+    margin-right: 8px;
+    margin-left: 8px;
     background-color: #16161a;
+    padding: 1rem;
+}
+.flex{
+    display:flex
 }
 header a, h4, h3{
     color: #fffffe;
@@ -73,6 +79,8 @@ footer{
 img{
     width: 1.2rem;
     height: 1.2rem;
+    max-width: 100%;
+    max-height: 100%;
 }
 .contatos{
     margin: 0;
@@ -83,4 +91,32 @@ img{
 .borda{
     padding-bottom: 1rem;
     border-bottom: 1px solid white;
+}
+@media(max-width:700px){
+    .principal{
+        flex-direction:column;
+    }
+    main,aside{
+        width: 100%;
+    }
+    footer{
+        height: 8rem;
+    }
+    .contatos{
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contato{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0.5rem;
+    }
+    footer p{
+        text-align: center;
+    }
+    aside{
+        margin-top: 0.5rem;
+    }
 }
